@@ -18,3 +18,4 @@ Howto:
 * Check deathrow.sqlite to verify if the data is actually in the database
 * Run gword.py. This program will create gword.js, in which the most common words are being stored.
 * Open gword.htm to see a word cloud. This cloud is based on the file gword.js
+* See the beauty of the word cloud :)

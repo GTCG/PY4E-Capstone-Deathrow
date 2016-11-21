@@ -1,6 +1,6 @@
 # Retrieve the last statements from deathrow-inmates
 
-I wrote a program which retrieves the last statements of the executed inmates on death row. The website where you can these statements can be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version of the program for python 2.7 and one for Python 3.x.
+I wrote a program which retrieves the last statements of the executed inmates on death row and shows the most used words in a word cloud, thanks to the D3.js module. More information about the D3.js module can be found [here](https://github.com/d3/d3/zipball/master) The website where you can these statements can be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version of the program for python 2.7 and a version for Python 3.x.
 
 **1)What it does:**
 * It creates a database in Sqlite, being deathrow.sqlite, with table "Inmates"
@@ -9,8 +9,8 @@ I wrote a program which retrieves the last statements of the executed inmates on
 * It creates a word cloud with the most common words in the last statements of the inmates.(Optional)
 
 **2)Requirements:**
-* Python ofcourse, being at least v 2.7 or higher
-* Sqlite which can be downloaded from https://sqlite.org/
+* Python ofcourse, being at least v 2.7 or higher [download python](http://www.python.org)
+* Sqlite which can be downloaded from [here](https://sqlite.org/)
 * BeautifulSoup4 module which can be downloaded via pip in python 3.5. for python 2.7 one has to download pip manually. Plenty of guides can be found on the net explaining how to handle this.
 
 **3)Howto:**

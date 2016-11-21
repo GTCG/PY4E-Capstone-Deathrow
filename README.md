@@ -15,7 +15,7 @@ I wrote a program which retrieves the last statements of the executed inmates on
 
 **3)Howto:**
 * Download all the files
-* Run "Deathrow.py". Make sure you select the correct version: Python 2.7 or 3.6
+* Run "Deathrow.py". Make sure you select the correct version: Python 2.7 or 3.x
 * Check deathrow.sqlite to verify if the data is actually in the database
 * Run gword.py. This program will create gword.js, in which the most common words are being stored.
 * Open gword.htm to see a word cloud. This cloud is based on the file gword.js

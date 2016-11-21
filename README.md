@@ -2,18 +2,18 @@
 
 I wrote a program which retrieves the last statements of the executed inmates on death row. The website where you can these statements can be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version of the program for python 2.7 and one for Python 3.x.
 
-1)What it does:
+**1)What it does:**
 * It creates a database in Sqlite, being deathrow.sqlite, with table "Inmates"
 * It retrieves the data and the statements from each inmate
 * It imports this cleaned data into the database deathrow.sqlite, in table "Inmates"
 * Create a word cloud with the most common words in the last statements of the inmates.(Optional)
 
-2)Requirements:
+**2)Requirements:**
 * Python ofcourse, being at least v 2.7 or higher
 * Sqlite which can be downloaded from https://sqlite.org/
 * BeautifulSoup4 module which can be downloaded via pip in python 3.5. for python 2.7 one has to download pip manually. Plenty of guides can be found on the net explaining how to handle this.
 
-3)Howto:
+**3)Howto:**
 * Download all the files
 * Run "Deathrow.py". Make sure you select the correct version: Python 2.7 or 3.6
 * Check deathrow.sqlite to verify if the data is actually in the database

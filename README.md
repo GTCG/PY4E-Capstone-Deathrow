@@ -1,5 +1,7 @@
 # Deathrow
 
+I wrote a program which retrieves the last statements of the executed inmates on death row. The website kan be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version for python 2.7 or higher.
+
 1)What it does:
 * It creates a database in Sqlite, being deathrow.sqlite, with table "Inmates"
 * It retrieves the data and the statements from each inmate
@@ -13,8 +15,10 @@
 
 3)Howto:
 * Download all the files
-* Run "Deathrow.py". Make sure you select the correct version, beging Python 2.7 or 3.6
+* Run "Deathrow.py". Make sure you select the correct version: Python 2.7 or 3.6
 * Check deathrow.sqlite to verify if the data is actually in the database
 * Run gword.py. This program will create gword.js, in which the most common words are being stored.
 * Open gword.htm to see a word cloud. This cloud is based on the file gword.js
 * See the beauty of the word cloud :)
+
+Feel free to report bugs, fixes, or stuff to make the program better in general.

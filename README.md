@@ -1,6 +1,6 @@
 # Retrieve the last statements from deathrow-inmates
 
-I wrote a program which retrieves the last statements of the executed inmates on death row. The website kan be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version for python 2.7 or higher.
+I wrote a program which retrieves the last statements of the executed inmates on death row. The website where you can these statements can be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version of the program for python 2.7 and one for Python 3.x.
 
 1)What it does:
 * It creates a database in Sqlite, being deathrow.sqlite, with table "Inmates"

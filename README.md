@@ -22,6 +22,8 @@ I wrote a program which retrieves the last statements of the executed inmates on
 * See the beauty of the word cloud :)
 
 I've also made a small screencast with an explanation of how the program works.
+
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=R2cGUJTw6lc
 " target="_blank"><img src="http://img.youtube.com/vi/R2cGUJTw6lc/0.jpg" 
 alt="Capstone" width="240" height="180" border="10" /></a>

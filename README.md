@@ -21,7 +21,7 @@ I wrote a program which retrieves the last statements of the executed inmates on
 * Open gword.htm to see a word cloud. This cloud is based on the file gword.js
 * See the beauty of the word cloud :)
 
-I've also made a small screencast with an explanation of how the program works.
+I've also made a small screencast with an explanation of how the program works. Click the image below.
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=R2cGUJTw6lc

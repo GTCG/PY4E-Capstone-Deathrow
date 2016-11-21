@@ -6,7 +6,7 @@ I wrote a program which retrieves the last statements of the executed inmates on
 * It creates a database in Sqlite, being deathrow.sqlite, with table "Inmates"
 * It retrieves the data and the statements from each inmate
 * It imports this cleaned data into the database deathrow.sqlite, in table "Inmates"
-* Create a word cloud with the most common words in the last statements of the inmates.(Optional)
+* It creates a word cloud with the most common words in the last statements of the inmates.(Optional)
 
 **2)Requirements:**
 * Python ofcourse, being at least v 2.7 or higher

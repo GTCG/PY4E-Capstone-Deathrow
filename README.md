@@ -1,4 +1,4 @@
-# Deathrow
+# Retrieve the last statements from deathrow-inmates
 
 I wrote a program which retrieves the last statements of the executed inmates on death row. The website kan be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version for python 2.7 or higher.
 

@@ -24,9 +24,5 @@ I wrote a program which retrieves the last statements of the executed inmates on
 I've also made a small screencast with an explanation of how the program works. Click the image below.
 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=R2cGUJTw6lc
-" target="_blank"><img src="http://img.youtube.com/vi/R2cGUJTw6lc/0.jpg" 
-alt="Capstone" width="240" height="180" border="10" /></a>
-
 
 Feel free to report bugs, fixes, or stuff to make the program better.

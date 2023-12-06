@@ -21,7 +21,7 @@ I've also updated this readme.
 **2)Requirements:**
 * Python ofcourse, being at least v 2.7 or higher [download python](http://www.python.org)
 * Notepad++, or Visual Studio Code, or use your own preference
-* Sqlite, which can be downloaded from [here]([https://sqlite.org/](https://sqlitebrowser.org/dl/))
+* Sqlite, which can be downloaded from [here](https://sqlitebrowser.org/dl/)
 * BeautifulSoup4 module which can be downloaded via pip. For python 2.7 I have put the module in the folder.
 
 **3)Howto:**

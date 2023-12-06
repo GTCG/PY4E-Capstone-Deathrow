@@ -7,9 +7,9 @@ I've completely redesigned this program since December 2023. I've added multiple
 * Fixed errors where certain statements could not be downloaded because they were linked wrong on the website. Please check the script for details
 * Modified the code so it's faster and more efficient
 * Fixed some bugs in character encoding when the most common words are being read from the sqlite database and are being put in the file gword.js
-* Created a list of exclude a lot of most common words because they are not relevant
-* Fixed a bug in pywords.py where the output of the program would not show the numbers of the counts of the words that are most the most and least
-* added a few extra rows with some more information about the inmates. They were not included in previous versions
+* Created a list of exclude a lot of most common words because they are not relevant to display in the word cloud. Words like "there, been, could, ...". Please see gwords.py to see the list.
+* Fixed a bug in pywords.py where the output of the program would not show the numbers of the counts of the words that are most the most and least used
+* Added a few extra rows with some more information about the inmates. They were not included in previous versions but I've done a small effort into including them
 
 I've also updated this readme.
 

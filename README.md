@@ -1,9 +1,10 @@
 # Retrieve the last statements from deathrow-inmates
 
-I wrote a program which retrieves the last statements of the executed inmates on death row and shows the most used words in a word cloud, thanks to the D3.js module. More information about the D3.js module can be found [here](https://github.com/d3/d3/zipball/master) The website where you can these statements can be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version of the program for python 2.7 and 2 versions for Python 3.x. The 2.7 version gets its data from the included csv file which I made on a third party website. I really encourage you to download the 3.x version as it is much, much better and has much better error-handeling.
+I wrote a program which retrieves the last statements of the executed inmates on Texas death row and shows the 100 most used words in a word cloud, thanks to the D3.js module. More information about the D3.js module can be found [here](https://github.com/d3/d3/zipball/master) The website where you can find these statements (and other information) can be found [here](https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html). There is a version of the program for python 2.7 and 2 versions for Python 3.x. The 2.7 version gets its data from the included csv file which I made on a third party website. I really encourage you to download the 3.10  version -which I made around december 2023- as it is much, much better. Version 3.10 is probably the only version which still works because the website of Texas death row seems to have changed over the last couple of years.
 
 I've completely redesigned this program since december 2023. I've added multiple bugfixes and small improvements:
-* Fixed errors where certain statements could not be downloaded because they were linked wrong on the website
+* The website seems to have gotten a new URL. Had to fix that in my code
+* Fixed errors where certain statements could not be downloaded because they were linked wrong on the website. Please check the script for details
 * Modified the code so it's faster and more efficient
 * Fixed some bugs in character encoding when the most common words are being read from the sqlite database and are being put in the file gword.js
 * Created a list of exclude a lot of most common words because they are not relevant

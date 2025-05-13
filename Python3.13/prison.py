@@ -44,7 +44,7 @@ for row in table.find_all("tr")[1:]:
 
     Lastname = str(cells[3].get_text())
     Firstname = str(cells[4].get_text())
-    TDCJ = str(cells[5].get_text())  # <- fixed variable name
+    TDCJ = str(cells[5].get_text()) 
     Age = int(cells[6].get_text())
     Date = datetime.strptime(cells[7].get_text(), '%m/%d/%Y').date()
     Race = str(cells[8].get_text())
@@ -87,4 +87,4 @@ for row in table.find_all("tr")[1:]:
 
 conn.commit()
 conn.close()
-print("Retrieval complete. Open deathrow.sqlite to see the data. Execute gword.py to create the wordcloud.")
+print("Retrieval complete. Open deathrow.sqlite to see the data. Execute gword.py to create the wordcloud. Open gword.htm after that. Make sure the files d3.layout.cloud and d3.v2 are in your working directory")

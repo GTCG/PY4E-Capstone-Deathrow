@@ -153,4 +153,4 @@ for row in table.find_all("tr")[1:]:
 
 conn.commit()
 conn.close()
-print("Retrieval complete. Open deathrow.sqlite to see the data. Execute gword.py to create the wordcloud. Open gword.htm after that. Make sure the files d3.layout.cloud and d3.v2 are in your working directory")
+print("Retrieval complete. Open deathrow.sqlite to see the data. Execute gword.py to create gword.js which shows a list of the most used words. Open gword.htm after that. gword.htm will run the js files in the working directory to create the word cloud. Make sure the files d3.layout.cloud.js, gword.js and d3.v2 are in your working directory")

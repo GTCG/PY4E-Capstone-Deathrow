@@ -11,8 +11,8 @@ I've completely redesigned this program in December 2023 and May 2025. I've adde
 * Fixed a bug in pywords.py where the output of the program would not show the numbers of the counts of the words that are most the most and least used.
 * Added a few extra rows with some more information about the inmates. They were not included in previous versions but I've done a small effort into including them.
 * Other minor bug fixes and improvements.
-* Since May 2025: Better error handeling in case certain HTML elements are not found in the structure of the website
-* Since May 2025: Minor bugfixes
+* Since May 2025: Better error handeling in case certain HTML elements are not found in the structure of the website. The last statement were not always in the same HTML code, so I had to write extra code to catch those (case 1-4 in the script)
+* Since May 2025: Minor bugfixes + added a sleep timer of 0.5 after the retrieval of relevant information of each inmate so the website doesn't get hammered
 * Since May 2025: fixed some typo's that were in the code
 
 I've also updated this readme.

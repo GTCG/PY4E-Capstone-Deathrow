@@ -92,7 +92,7 @@ for row in table.find_all("tr")[1:]:
                     if next_p:
                         statement = next_p.get_text(separator="\n", strip=True)
                     break
-# Case 4: <p class="bold">Last Statement:</p> followed by text node or tag
+        # Case 4: <p class="bold">Last Statement:</p> followed by text node or tag
         if not statement:
             for p in soup.find_all('p', class_='bold'):
                 if "last statement" in p.get_text(strip=True).lower():

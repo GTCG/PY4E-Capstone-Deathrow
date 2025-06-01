@@ -8,14 +8,14 @@ I've completely redesigned this program in December 2023 and May 2025. I've adde
 * Modified the code so it's faster and more efficient.
 * Fixed some bugs in character encoding when the most common words are being read from the SQlite database and are being put in the file gword.js.
 * Created a list of exclude a lot of most common words because they are not relevant to display in the word cloud. Words like "there, been, could, ...". Please see gwords.py to see the list.
-* Fixed a bug in pywords.py where the output of the program would not show the numbers of the counts of the words that are most the most and least used.
+* Fixed a bug in pywords.py where the output of the program would not show the numbers of the counts of the words that are most the most and least used. I also added the words themselves with the highest and lowest count.
 * Added a few extra rows with some more information about the inmates. They were not included in previous versions but I've done a small effort into including them.
 * Other minor bug fixes and improvements.
 * Since May 2025: Better error handeling in case certain HTML elements are not found in the structure of the website. The last statement were not always in the same HTML code, so I had to write extra code to catch those (case 1-4 in the script)
 * Since May 2025: Minor bugfixes + added a sleep timer of 0.5 after the retrieval of relevant information of each inmate so the website doesn't get hammered
 * Since May 2025: fixed some typo's that were in the code
-
-I've also updated this readme.
+* Since May 2025: The retrieval of the statements has now been written into a function
+* Since May 2025: added a user agent to prevent from being blocked while scraping
 
 **1)What the program does:**
 * It creates a database called deathrow.sqlite, with the table "Inmates" and a bunch of rows which include information about the inmates.

@@ -16,6 +16,7 @@ I've completely redesigned this program in December 2023 and May 2025. I've adde
 * Since May 2025: fixed some typo's that were in the code
 * Since May 2025: The retrieval of the statements has now been written into a function
 * Since May 2025: added a user agent to prevent from being blocked while scraping
+* Since May 2025: I included a requirements.txt file for easier installation
 
 **1)What the program does:**
 * It creates a database called deathrow.sqlite, with the table "Inmates" and a bunch of rows which include information about the inmates.
@@ -26,7 +27,7 @@ I've completely redesigned this program in December 2023 and May 2025. I've adde
 **2)Requirements:**
 * Python ofcourse, being at least v 2.7 or higher [download python](http://www.python.org).
 * Notepad++, Visual Studio Code, or whatever suits your needs
-* The modules which you can find in the requirements.txt file
+* The modules which you can find in the requirements.txt file (use: pip install -r requirements.txt) for installation
 * Sqlite, which can be downloaded from [here](https://sqlitebrowser.org/dl/).
 
 **3)Howto:**

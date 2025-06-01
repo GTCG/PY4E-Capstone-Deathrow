@@ -26,8 +26,8 @@ I've completely redesigned this program in December 2023 and May 2025. I've adde
 **2)Requirements:**
 * Python ofcourse, being at least v 2.7 or higher [download python](http://www.python.org).
 * Notepad++, Visual Studio Code, or whatever suits your needs
+* The modules which you can find in the requirements.txt file
 * Sqlite, which can be downloaded from [here](https://sqlitebrowser.org/dl/).
-* BeautifulSoup4 module which can be downloaded via pip. For python 2.7 I have put the module in the folder.
 
 **3)Howto:**
 * Download all the files which are compatible with your Python version (which will probably be the lastest version)

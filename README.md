@@ -35,10 +35,10 @@ I've completely redesigned this program in December 2023 and May 2025. I've adde
 * Run "Deathrow.py". It will run for a few minutes. You can check the output to see if it retrieves each statement correctly.
 * Check deathrow.sqlite to verify if the data is actually in the database. You should have one table called "Inmates" which has all the information you need.
 * Run gword.py. This program will create gword.js, in which the most 100 common words are being stored, except those that are in the "ignore" list in gword.py. These are meaningless words like "are, you, be, ...". Feel free to modify this list.
+* Open gword.htm to see a word cloud. This cloud is based on the file gword.js. This cloud needs d3.layout.cloud.js and d3.v2 to run. Feel free to check and modify the gword.htm file to suit your needs.
+* See the beauty of the word cloud :)
 
 **4(Short video:**
 You can watch a short video about this video here: https://youtu.be/fzju-O1fpfY
-* Open gword.htm to see a word cloud. This cloud is based on the file gword.js. This cloud needs d3.layout.cloud.js and d3.v2 to run. Feel free to check and modify the gword.htm file to suit your needs.
-* See the beauty of the word cloud :)
 
 Feel free to report bugs, fixes, or stuff to make the program better.

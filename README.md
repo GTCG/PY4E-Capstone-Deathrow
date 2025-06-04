@@ -39,6 +39,6 @@ I've completely redesigned this program in December 2023 and May 2025. I've adde
 * See the beauty of the word cloud :)
 
 **4)Short video:**
-You can watch a short video about this video here: https://youtu.be/fzju-O1fpfY
+* You can watch a short video about this video here: https://youtu.be/fzju-O1fpfY
 
 Feel free to report bugs, fixes, or stuff to make the program better.

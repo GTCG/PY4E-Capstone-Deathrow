@@ -38,7 +38,7 @@ I've completely redesigned this program in December 2023 and May 2025. I've adde
 * Open gword.htm to see a word cloud. This cloud is based on the file gword.js. This cloud needs d3.layout.cloud.js and d3.v2 to run. Feel free to check and modify the gword.htm file to suit your needs.
 * See the beauty of the word cloud :)
 
-**4(Short video:**
+**4)Short video:**
 You can watch a short video about this video here: https://youtu.be/fzju-O1fpfY
 
 Feel free to report bugs, fixes, or stuff to make the program better.

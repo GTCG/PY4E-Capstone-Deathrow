@@ -17,9 +17,14 @@ def extract_last_statement(url, headers):
         # Case 1: <p class="bold">Last Statement:</p>
         for p in soup.find_all('p', class_='bold'):
             if "last statement" in p.get_text(strip=True).lower():
+                statement_parts = []
                 next_p = p.find_next_sibling('p')
-                if next_p:
-                    statement = next_p.get_text(separator="\n", strip=True)
+                while next_p and next_p.name =='p':
+                    text = next_p.get_text(separator=" ", strip=True)
+                    if text:
+                        statement_parts.append(text)
+                    next_p = next_p.find_next_sibling()
+                statement = " ".join(statement_parts).strip()
                 break
 
         # Case 2: <p><span class="bold">Last Statement:</span></p>
@@ -27,9 +32,14 @@ def extract_last_statement(url, headers):
             for p in soup.find_all('p'):
                 span = p.find('span', class_='bold')
                 if span and 'last statement' in span.get_text(strip=True).lower():
+                    statement_parts = []
                     next_p = p.find_next_sibling('p')
-                    if next_p:
-                        statement = next_p.get_text(separator="\n", strip=True)
+                    while next_p and next_p.name == 'p':
+                        text = next_p.get_text(separator=" ", strip=True)
+                        if text:
+                            statement_parts.append(text)
+                        next_p = next_p.find_next_sibling()
+                    statement = " ".join(statement_parts).strip()
                     break
 
         # Case 3: <p><strong>Last Statement:</strong></p>
@@ -37,9 +47,14 @@ def extract_last_statement(url, headers):
             for p in soup.find_all('p'):
                 strong = p.find('strong')
                 if strong and 'last statement' in strong.get_text(strip=True).lower():
+                    statement_parts = []
                     next_p = p.find_next_sibling('p')
-                    if next_p:
-                        statement = next_p.get_text(separator="\n", strip=True)
+                    while next_p and next_p.name == 'p':
+                        text = next_p.get_text(separator=" ", strip=True)
+                        if text:
+                            statement_parts.append(text)
+                        next_p = next_p.find_next_sibling()
+                    statement = " ".join(statement_parts).strip()
                     break
 
         # Case 4: fallback sibling or text node
@@ -53,7 +68,8 @@ def extract_last_statement(url, headers):
                         next_sib = p.next_sibling
                         statement = next_sib.get_text(strip=True) if hasattr(next_sib, 'get_text') else str(next_sib).strip()
                     break
-        statement = statement.replace("<span class=", "").replace("</span>", "").replace('"', "")
+        statement = statement.replace("<span class=", "").replace("</span>", "").strip()
+        statement = statement.strip('"').strip()
         statement = statement.replace("text_italic>", "")
         statement = statement.replace('’', "'").replace('‘', "'")
         statement = statement.replace('“', '"').replace('”', '"').strip()

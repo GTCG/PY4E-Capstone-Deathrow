@@ -36,7 +36,7 @@ I've completely revised this program in December 2023 and in May-June 2025. I've
 * Download all the files which are compatible with your Python version (which will probably be the lastest version)
 * Run "Deathrow.py". It will run for a few minutes. You can check the output to see if it retrieves each statement correctly.
 * Check deathrow.sqlite to verify if the data is actually in the database. You should have one table called "Inmates" which has all the information you need.
-* Run gword.py. This program will create gword.js, in which the most 100 common words are being stored, except those that are in the "ignore" list in gword.py. These are meaningless words like "are, you, be, ...". Feel free to modify this list.
+* Run gword.py. This program will create gword.js, in which the most 100 common words are being stored, except those that are in the "ignore" list in gword.py. These are meaningless words like "are", "you", "be", .... Feel free to modify this list.
 * Open gword.htm to see a word cloud. This cloud is based on the file gword.js. This cloud needs d3.layout.cloud.js and d3.v2 to run. Feel free to check and modify the gword.htm file to suit your needs.
 * See the beauty of the word cloud :)
 

@@ -68,11 +68,21 @@ def extract_last_statement(url, headers):
                         next_sib = p.next_sibling
                         statement = next_sib.get_text(strip=True) if hasattr(next_sib, 'get_text') else str(next_sib).strip()
                     break
-        statement = statement.replace("<span class=", "").replace("</span>", "").strip()
-        statement = statement.strip('"').strip()
-        statement = statement.replace("text_italic>", "")
-        statement = statement.replace('’', "'").replace('‘', "'")
-        statement = statement.replace('“', '"').replace('”', '"').strip()
+        statement = statement.replace("<span class=", "").replace("</span>", "").replace("text_italic>", "").strip()
+        smart_quotes = {
+        '’': "'", '‘': "'",
+        '“': '"', '”': '"'
+        }
+        for bad, good in smart_quotes.items():
+            statement = statement.replace(bad, good)
+            
+        statement = statement.strip()
+        if statement.startswith('"') and statement.endswith('"'):
+            statement = statement[1:-1].strip()
+        elif statement.startswith('"') and '"' not in statement[1:]:
+            statement = statement[1:].strip()
+        elif statement.endswith('"') and '"' not in statement[:-1]:
+            statement = statement[:-1].strip()
 
         corrections = {
             'â€™': "'", 'â€˜': "'", 'â€œ': '"', 'â€': '"', 'â€”': '—',

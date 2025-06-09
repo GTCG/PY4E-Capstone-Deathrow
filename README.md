@@ -18,6 +18,7 @@ I've completely redesigned this program in December 2023 and May-June 2025. I've
 * Since May 2025: added a user agent to prevent from being blocked/banned from the website while scraping.
 * Since May 2025: I included a requirements.txt file for easier installation of the script.
 * Since June 2025: Statements which had multiple paragraphs were not fully added into the database. Only the first paragraph was added. This has now been fixed.
+* Since June 2025: removed certain quotes (") in the beginning and ending of certain statements.
 
 **1)What the program does:**
 * It creates a database called deathrow.sqlite, with the table "Inmates" and a bunch of rows which include information about the inmates.

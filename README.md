@@ -45,8 +45,8 @@ I've completely revised this program in December 2023 and in May-June 2025. I've
 
 **5)Picture of the wordcloud:**
 
+You can see a picture of the wordcloud below. I drew rectangles around the words with the hightest count (love) and the lowest count (wife). This version is of June 2025. 
+
 ![Picture of the wordcloud](wordcloud.png)
 
-
-
-Feel free to report bugs, fixes, or stuff to make the program better.
+Feel free to report bugs, fixes, or stuff to make the script even better!
